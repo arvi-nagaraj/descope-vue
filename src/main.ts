@@ -2,9 +2,11 @@ import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
 import descope from "@descope/vue-sdk";
+import { router } from "./router";
 
 createApp(App)
   .use(descope, {
-    projectId: import.meta.env.VITE_DESCOPE_PROJECT_ID,
+    projectId: "-",
   })
+  .use(router)
   .mount("#app");

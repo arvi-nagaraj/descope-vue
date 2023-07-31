@@ -13,9 +13,11 @@ const logoutApp = async () => {
 </script>
 
 <template>
-  <div>Hello world</div>
-  <router-link to="/earth">Go to earth</router-link>
-  <button @click="logoutApp">Logout</button>
+  <div>Hello Earth</div>
+
+  <div style="margin-top: 20px">
+    <button @click="logoutApp" style="cursor: pointer">Logout</button>
+  </div>
 </template>
 
 <style scoped></style>
